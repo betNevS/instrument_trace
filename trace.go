@@ -15,6 +15,7 @@ var (
 )
 
 func Trace() func() {
+	fmt.Println("new trace func !!!")
 	pc, _, _, ok := runtime.Caller(1)
 	if !ok {
 		panic("not found caller")
